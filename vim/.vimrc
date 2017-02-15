@@ -21,6 +21,8 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'ivyl/vim-bling'
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
+" NERDTree
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -50,6 +52,11 @@ au Syntax * RainbowParenthesesLoadBraces
 set t_Co=256
 let g:airline_theme='bubblegum'
 let g:airline_exclude_preview=1 
+
+" NERDTree
+let g:NERDTreeDirArrows=0
+au VimEnter *  NERDTree
+autocmd VimEnter * wincmd p " jump to main window
 
 " gitgutter
 set updatetime=250

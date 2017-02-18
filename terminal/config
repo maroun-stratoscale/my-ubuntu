@@ -1,0 +1,24 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+[keybindings]
+  broadcast_all = <Primary>g
+  broadcast_group = <Primary><Shift>underscore
+  broadcast_off = <Primary><Shift>g
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.82
+    background_image = None
+    background_type = transparent
+    font = Monospace 10.5
+    scroll_on_output = False
+    scrollback_infinite = True
+    use_system_font = False

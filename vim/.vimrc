@@ -1,5 +1,5 @@
 """" vundle
-set nocompatible  
+set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
@@ -41,6 +41,11 @@ set shiftwidth=4
 set tabstop=4
 set ignorecase
 set smartcase
+set modifiable
+" highlight space at the end of the line
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 
 " rainbow parentheses configuration
 au VimEnter * RainbowParenthesesToggle
@@ -60,3 +65,6 @@ autocmd VimEnter * wincmd p " jump to main window
 
 " gitgutter
 set updatetime=250
+
+" default maps
+map <F5> :setlocal spell! spelllang=en_us<CR>

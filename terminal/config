@@ -4,6 +4,11 @@
   broadcast_all = <Primary>g
   broadcast_group = <Primary><Shift>underscore
   broadcast_off = <Primary><Shift>g
+  close_window = <Primary><Shift>q
+  move_tab_left = <Shift><Alt>Page_Down
+  move_tab_right = <Shift><Alt>Page_Up
+  next_tab = <Alt>2
+  prev_tab = <Alt>1
 [layouts]
   [[default]]
     [[[child1]]]
@@ -15,10 +20,10 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.82
-    background_image = None
+    background_darkness = 0.84
+    background_image = /home/maroun/Desktop/oQFdZdS.jpg
     background_type = transparent
-    font = Monospace 10.5
+    font = Monospace 11.5
     scroll_on_output = False
     scrollback_infinite = True
     use_system_font = False
